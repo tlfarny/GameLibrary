@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Item View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GameLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ItemViewController" customModule="GameLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -38,22 +38,22 @@
                     <navigationItem key="navigationItem" id="126-IA-VjV" colorLabel="IBBuiltInLabel-Red">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="C9z-MW-hyC">
                             <connections>
-                                <segue destination="75e-Qe-dZd" kind="show" id="FgR-i0-zQh"/>
+                                <segue destination="75e-Qe-dZd" kind="show" identifier="createSegue" id="FgR-i0-zQh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="lGq-Jd-UdY" kind="show" id="mla-JU-LQL"/>
+                        <segue destination="lGq-Jd-UdY" kind="show" identifier="viewSegue" id="mla-JU-LQL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="863.20000000000005" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--View Item View Controller-->
         <scene sceneID="AbE-Bn-1oQ">
             <objects>
-                <viewController id="lGq-Jd-UdY" sceneMemberID="viewController">
+                <viewController id="lGq-Jd-UdY" customClass="ViewItemViewController" customModule="GameLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5X7-6c-pgg"/>
                         <viewControllerLayoutGuide type="bottom" id="qe2-Ka-Y1C"/>
@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="863" y="887"/>
         </scene>
-        <!--View Controller-->
+        <!--Create View Controller-->
         <scene sceneID="8sa-8F-RuF">
             <objects>
-                <viewController id="75e-Qe-dZd" sceneMemberID="viewController">
+                <viewController id="75e-Qe-dZd" customClass="CreateViewController" customModule="GameLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K7W-er-WoW"/>
                         <viewControllerLayoutGuide type="bottom" id="U5e-6c-eQS"/>

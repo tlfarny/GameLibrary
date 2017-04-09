@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ItemViewController.swift
 //  GameLibrary
 //
 //  Created by Travis Farnsworth on 4/9/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ItemViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
